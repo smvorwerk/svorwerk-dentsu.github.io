@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Errors - Sa11y Demo</title>
+  <title>Accessibility Authoring Tool Demo</title>
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,17 +17,20 @@
   <header>
 
     <div class="sa11y-website-frame-message">
-      <p style="display:none;" id="iframe-check"><a class="sa11y-exclude" href="errors.html" target="_blank">Open this
-          page in a new tab for a better experience.</a> <span class="fas fa-external-link-alt"
-          aria-hidden="true"></span></p>
-      <p style="display:none;" id="newtabonly">Viewing demo in a new tab. <a href="../index.html#demo">Go back to
-          documentation.</a></p>
+      <p style="display:none;" id="iframe-check"><!--<a class="sa11y-exclude" href="errors.html" target="_blank">Open in a new tab for a better experience.</a> --> 
+      	<span class="fas fa-external-link-alt" aria-hidden="true"></span></p>
+      <p style="display:none;" id="newtabonly"><!--Viewing demo in a new tab. <a href="../index.html#demo">Go back to documentation.</a>--></p>
+      <p>
+      This currently only exists as an external JS file, but I am working on integrating it into a WP Plugin. <br/>
+      Then I will push all "contenteditable" elements to the checker (all Gutenberg editable blocks).<br/>
+      Accessibility checking will occur whenever "Save Draft" or "Publish" is clicked, I'll hook into those WP Functions.
+      </p>
     </div>
 
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container d-flex justify-content-between">
         <span class="d-flex align-items-center text-white">
-          <strong>Sa11y Demo</strong>
+          <strong>Accessibility Authoring Demo</strong>
         </span>
         <nav class="nav nav-masthead justify-content-center sa11y-ignore">
           <a class="nav-link active" href="errors.html">Errors</a>
@@ -164,7 +167,7 @@
   </main>
   <footer class="text-muted sa11y-ignore">
     <div class="container">
-      <p>Customize Sa11y to target specific regions of a page only. For example, <a href="#">this</a> link will be
+      <p>We can use the accessibility authoring tool to target specific regions of a page only. For example, <a href="#">this</a> link will be
         ignored. If a content editor can't edit it, don't scan it.</p>
     </div>
   </footer>
