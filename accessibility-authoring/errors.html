@@ -17,9 +17,15 @@
   <header>
 
     <div class="wordpa11y-website-frame-message">
-      <p style="display:none;" id="iframe-check"><!--<a class="wordpa11y-exclude" href="errors.html" target="_blank">Open in a new tab for a better experience.</a> --> 
-      	<span class="fas fa-external-link-alt" aria-hidden="true"></span></p>
-      <p style="display:none;" id="newtabonly"><!--Viewing demo in a new tab. <a href="../index.html#demo">Go back to documentation.</a>--></p>
+      <div style="display:none;" id="ignore-docref">
+        <p style="display:none;" id="iframe-check">
+          <!--<a class="wordpa11y-exclude" href="errors.html" target="_blank">Open in a new tab for a better experience.</a> --> 
+      	  <span class="fas fa-external-link-alt" aria-hidden="true"></span>
+      	</p>
+        <p style="display:none;" id="newtabonly">
+          <!--Viewing demo in a new tab. <a href="../index.html#demo">Go back to documentation.</a>-->
+        </p>
+      </div>
       <p>
       This currently only exists as an external JS file, but I am working on integrating it into a WP Plugin. <br/>
       Then I will push all "contenteditable" elements to the checker (all Gutenberg editable blocks).<br/>
