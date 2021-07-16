@@ -5,7 +5,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Headings &amp; Images - All Rulesets - Sa11y Demo</title>
+  <title>Headings &amp; Images - All Rulesets - WordPa11y Demo</title>
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,19 +15,28 @@
 
 <body>
   <header>
-    <div class="sa11y-website-frame-message">
-      <p style="display:none;" id="iframe-check"><a class="sa11y-exclude" href="headings-images.html"
-          target="_blank">Open this page in a new tab for a better experience.</a> <span
-          class="fas fa-external-link-alt" aria-hidden="true"></span></p>
-      <p style="display:none;" id="newtabonly">Viewing demo in a new tab. <a href="../index.html#demo">Go back to
-          documentation.</a></p>
+        <div class="wordpa11y-website-frame-message">
+      <div style="display:none;" id="ignore-docref">
+        <p style="display:none;" id="iframe-check">
+          <!--<a class="wordpa11y-exclude" href="errors.html" target="_blank">Open in a new tab for a better experience.</a> --> 
+      	  <span class="fas fa-external-link-alt" aria-hidden="true"></span>
+      	</p>
+        <p style="display:none;" id="newtabonly">
+          <!--Viewing demo in a new tab. <a href="../index.html#demo">Go back to documentation.</a>-->
+        </p>
+      </div>
+      <p>
+      This currently only exists as an external JS file, but I am working on integrating it into a WP Plugin. <br/>
+      Then I will push all "contenteditable" elements to the checker (all Gutenberg editable blocks).<br/>
+      Accessibility checking will occur whenever "Save Draft" or "Publish" is clicked, I'll hook into those WP Functions.
+      </p>
     </div>
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container d-flex justify-content-between">
         <span class="d-flex align-items-center text-white">
-          <strong>Sa11y Demo</strong>
+          <strong>WordPa11y Demo</strong>
         </span>
-        <nav class="nav nav-masthead justify-content-center sa11y-ignore">
+        <nav class="nav nav-masthead justify-content-center wordpa11y-ignore">
           <a class="nav-link" href="errors.html">Errors</a>
           <a class="nav-link" href="warnings.html">Warnings</a>
           <a class="nav-link" href="pass.html">No Errors</a>
@@ -69,7 +78,7 @@
           <div class="col-md-10">
             <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
               <h2 id="list-item-0">Headings</h2>
-              <p>Sa11y's heading structure ruleset has the following conditions:</p>
+              <p>WordPa11y's heading structure ruleset has the following conditions:</p>
               <ul class="mb-4">
                 <li>There must only be one <kbd>&lt;h1&gt;</kbd> on a page.</li>
                 <li>Headings must not skip levels.</li>
@@ -483,9 +492,9 @@
       </div>
     </div>
   </main>
-  <footer class="text-muted sa11y-ignore">
+  <footer class="text-muted wordpa11y-ignore">
     <div class="container">
-      <p>Customize Sa11y to target specific regions of a page only. For example, <a href="#">this</a> link will be
+      <p>Customize WordPa11y to target specific regions of a page only. For example, <a href="#">this</a> link will be
         ignored. If a content editor can't edit it, don't scan it.</p>
     </div>
   </footer>
@@ -521,10 +530,10 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
 
-  <!--Sa11y-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ryersondmp/sa11y@latest/src/sa11y.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/ryersondmp/sa11y@latest/src/sa11y-english.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ryersondmp/sa11y@latest/src/sa11y.min.js"></script>
+ <!--WordPa11y-->
+ <link rel="stylesheet" href="wordpa11y/wordpa11y.min.css" />
+ <script src="wordpa11y/wordpa11y.eng.min.js"></script>
+ <script src="wordpa11y/wordpa11y.min.js"></script>
 </body>
 
 </html>

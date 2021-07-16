@@ -33,7 +33,7 @@ main a:focus {
     color: aqua!important
 }
 
-.sa11y-website-frame-message {
+.wordpa11y-website-frame-message {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     background-color: #6a00aa!important;
@@ -43,19 +43,19 @@ main a:focus {
     height: 75px
 }
 
-.sa11y-website-frame-message a {
+.wordpa11y-website-frame-message a {
     color: white;
     text-decoration: underline;
     font-size: 15px
 }
 
-.sa11y-website-frame-message a:hover,
-.sa11y-website-frame-message a:focus {
+.wordpa11y-website-frame-message a:hover,
+.wordpa11y-website-frame-message a:focus {
     text-decoration: none;
     color: white;
 }
 
-.sa11y-website-frame-message p {
+.wordpa11y-website-frame-message p {
     margin: auto
 }
 
